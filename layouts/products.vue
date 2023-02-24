@@ -1,7 +1,7 @@
 <template>
     <header class="shadow-sm bg-black text-white">
         <nav class="container mx-auto p-4 flex justify-between">
-            <NuxtLink to="/" class="font-bold text-3xl">Dojo - Store</NuxtLink>
+            <NuxtLink to="/products" class="font-bold text-3xl">Dojo - Store</NuxtLink>
         </nav>
     </header>
 

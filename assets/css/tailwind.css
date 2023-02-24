@@ -9,15 +9,16 @@ body {
 
 @layer components{
     .btn {
-        @apply bg-[#115e59] text-white px-3 py-2 rounded-xl text-sm
+        @apply bg-[#115e59] text-white px-3 py-2 rounded-md text-center
     }
     .card{
-        @apply container text-center bg-gray-900  py-10 border-8
+        @apply container px-5 py-10 border-2
     }
     .card-header{
-        @apply font-bold text-white
+        @apply font-bold
     }
     .card-body{
-        @apply text-white px-5
+        @apply px-5
     }
+
 }

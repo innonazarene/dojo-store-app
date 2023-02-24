@@ -1,9 +1,10 @@
 <template>
-    <div class="mx-10 py-10">
-        <h2>Products</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel, dignissimos necessitatibus architecto facilis suscipit tempora in labore eius reprehenderit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel, dignissimos necessitatibus architecto facilis suscipit tempora in labore eius reprehenderit.</p>
-    </div>
+    <h1 class="font-bold py-5 mx-5 text-lg">Dojo Store - Merch</h1>
+    <div class="md:grid md:grid-cols-4 gap-4 px-10">
+        <div v-for="p in products" >
+           <ProductCard :product="p"/>
+        </div>
+   </div>
 </template>
 
 <script setup>
@@ -11,6 +12,10 @@
     definePageMeta({
         layout:'products'
     })
+
+    //fetch the products
+    const {data : products} = await useFetch('https://fakestoreapi.com/products')
+
 </script>
 
 <style scoped>
