@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-white;
+}
+
+@layer components{
+    .btn {
+        @apply bg-[#115e59] text-white px-3 py-2 rounded-xl text-sm
+    }
+    .card{
+        @apply container text-center bg-gray-900  py-10 border-8
+    }
+    .card-header{
+        @apply font-bold text-white
+    }
+    .card-body{
+        @apply text-white px-5
+    }
+}
