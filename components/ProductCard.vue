@@ -5,7 +5,7 @@
             <div class="font-bold text-xl mb-2">{{product.title}}</div>
         </div>
         <div class="px-5 py-2 grid grin-cols-4">
-            <p class="text-lg px-5" ><span class="font-bold">Price :</span> ₱ {{ product.price }}</p>
+            <p class="text-lg px-5 text-gray-8 text-cyan-800" ><span class="font-bold">Price :</span> ₱ {{ product.price }}</p>
             <NuxtLink class="btn mb-4 mt-10" :to="`/products/${product.id}`">View Product</NuxtLink>
         </div>
     </div>
